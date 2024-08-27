@@ -242,6 +242,7 @@ h3, h4 {
     text-decoration: none;
     line-height: 3.6em;
     font-size: 12px;
+    margin-top: 10px;
 }
 
 .button a:hover, .button input:hover {
