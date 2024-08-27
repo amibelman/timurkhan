@@ -23,3 +23,10 @@ $mail->isHTML(true);
 
 $mail->Subject = 'Заявка с сайта портфолио';
 $mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$tel ' его почта ' .$email ' его сообщение ' .$comment
+
+if(!$mail->send()) {
+    echo 'Error';
+} else {
+    header('location: thank-you.html');
+}
+?>
