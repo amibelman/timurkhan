@@ -70,4 +70,4 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
 });
 
-emailjs.init("service_terlu88"); // Этот ID будет вашим виртуальным почтальоном
+emailjs.init("rYNd9UbQPPlmosabK"); // Этот ID будет вашим виртуальным почтальоном
