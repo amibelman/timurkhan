@@ -71,3 +71,13 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
 });
 
 emailjs.init("rYNd9UbQPPlmosabK"); // Этот ID будет вашим виртуальным почтальоном
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Не обновляйте страницу, пока сообщение не отправлено
+    emailjs.sendForm('service_terlu88', 'template_p2k7weg', this)
+        .then(function() {
+            alert('Сообщение успешно отправлено!');
+        }, function(error) {
+            alert('Ошибка отправки: ' + error);
+        });
+});
